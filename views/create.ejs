@@ -11,13 +11,14 @@
                 <div class="container-fluid">
                     <h1 class="mt-4">중앙대학교 산업보안학과</h1>
                     <p>중앙대학교 산업보안학과에 오신것을 환영합니다.</p>
-                    <p>
-                        구성원은 강준규 김민준 윤성빈 전동현
-                        <br>
-                        토글메뉴를 어케사용하는건지까진 아직 모르겠음
-                    </p>                    
-                    <form action="/page/create">
-                        <button class="btn btn2-success">작성하기</a></button>              
+                    <form action="/page/create_process" method="post">
+                        <p><input type="text" name="title" placeholder="title"></p>
+                        <p>
+                          <textarea name="description" placeholder="description"></textarea>
+                        </p>
+                        <p>
+                          <button class="btn btn2-success">작성하기</button>
+                        </p>
                     </form>                  
                 </div>
             </div>
