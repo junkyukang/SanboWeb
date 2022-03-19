@@ -3,13 +3,13 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 const bodyParser= require('body-parser');
-const port = 80;
+const port = 8080;
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended : true}));
 
 app.listen( port, function(){
-    console.log ('listening on 5000')
+    console.log ('listening on 8080')
 });
 
 app.get('/', function(요청, 응답){
